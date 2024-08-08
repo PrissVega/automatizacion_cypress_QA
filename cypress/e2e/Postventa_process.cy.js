@@ -41,4 +41,37 @@ describe('Postventa process', () => {
     cy.contains('h2', 'PDS5736').parent('div.header-card').click();
     cy.contains('div', 'Usuario').click();
   });
+
+  it('User details', () =>{
+    login('wcadena@casabaca.com', 'wcadena@casabaca.com'); // Credenciales predeterminadas
+    cy.get('.call-card').click();
+    cy.get('input[placeholder="Placa o número de orden"]').type('MXAA52');
+    cy.contains('button', 'Buscar').click();
+    cy.contains('h2', 'PDS5736').parent('div.header-card').click();
+    cy.contains('div', 'Usuario').click();
+    cy.get(':nth-child(2) > .accordeon-data > .person-data > .header-person-data > .action-show').click();
+    cy.get(':nth-child(3) > .header-data-container > .q-icon').click();
+    cy.get(':nth-child(3) > .accordeon-data > .person-data > .header-person-data > .action-show').click();
+  })
+
+  it('Select opportunities for car', () =>{
+    login('wcadena@casabaca.com', 'wcadena@casabaca.com'); // Credenciales predeterminadas
+    cy.get('.call-card').click();
+    cy.get('input[placeholder="Placa o número de orden"]').type('MXAA52');
+    cy.contains('button', 'Buscar').click();
+    cy.contains('h2', 'PDS5736').parent('div.header-card').click();
+    cy.get('[style="border: 1px solid rgb(206, 206, 206); color: rgb(48, 48, 48); font-weight: 600; border-radius: 6px;"]').click();
+    cy.get('.container-scroll-intern > :nth-child(3)').then($container => {
+      const container = $container[0];
+      
+      // Encuentra el último elemento dentro del contenedor
+      const lastElement = $container.find('.element-to-view').last()[0];
+      
+      if (lastElement) {
+        container.scrollTop = lastElement.offsetTop;
+      } else {
+        console.error('No se encontró el último elemento.');
+      }
+    });
+});
 });
