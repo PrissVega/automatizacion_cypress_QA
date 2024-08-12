@@ -1,0 +1,36 @@
+{
+  "status": 200,
+  "hasData": false,
+  "apiData": {
+    "id": 1,
+    "instancia_id": 1,
+    "empresa_id": 1,
+    "auto_id": 20,
+    "gestion_id": 1,
+    "ordTaller": "C257909",
+    "ordFechaCrea": "20-06-2024",
+    "codOrdAsesor": "NRG",
+    "nomOrdAsesor": "NELSON GARCIA ",
+    "codAgencia": "12",
+    "nomAgencia": "CUMBAYA",
+    "agencias": "80",
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1"
+      },
+      {
+        "rel": "postventa.sugar_gestion.show",
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_gestion/1"
+      },
+      {
+        "rel": "postventa.sugar_ordencabecera.show.detalleGestionOportunidades.index",
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1/detalleGestionOportunidades"
+      },
+      {
+        "rel": "postventa.sugar_ordencabecera.show.detallegestionoportunidades_todos.index",
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1/detallegestionoportunidades_todos"
+      }
+    ]
+  }
+}
