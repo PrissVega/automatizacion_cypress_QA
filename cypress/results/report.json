@@ -2,34 +2,40 @@
   "status": 200,
   "hasData": false,
   "apiData": {
-    "id": 1,
+    "id": 4,
     "instancia_id": 1,
     "empresa_id": 1,
-    "auto_id": 20,
-    "gestion_id": 1,
-    "ordTaller": "C257909",
-    "ordFechaCrea": "20-06-2024",
-    "codOrdAsesor": "NRG",
-    "nomOrdAsesor": "NELSON GARCIA ",
-    "codAgencia": "12",
-    "nomAgencia": "CUMBAYA",
     "agencias": "80",
+    "auto_id": 5,
+    "gestion_prin_id": "8ee06d48-536b-11ef-baac-0242ac160002",
+    "gestion_general_tipo": "abierto",
+    "gestion_estado": "nuevo",
+    "users_id": 0,
+    "usuarios3s_id": 0,
+    "usersugars_id": "0",
+    "ordenes": 2,
+    "oportunidades": 5,
+    "repuestos": 0,
+    "accesorios": 0,
+    "servicios": 0,
+    "stock": 5,
+    "total_inicial": 780,
+    "subtotal_inicialrepuestos": 0,
+    "subtotal_inicialservicios": 780,
+    "subtotal_inicialaccesorios": 0,
+    "recuperado": 0,
+    "rechazado": 0,
+    "pendiente": 0,
+    "cita_fecha": null,
+    "llamada_fecha": null,
     "links": [
       {
         "rel": "self",
-        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1"
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_gestion/4"
       },
       {
-        "rel": "postventa.sugar_gestion.show",
-        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_gestion/1"
-      },
-      {
-        "rel": "postventa.sugar_ordencabecera.show.detalleGestionOportunidades.index",
-        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1/detalleGestionOportunidades"
-      },
-      {
-        "rel": "postventa.sugar_ordencabecera.show.detallegestionoportunidades_todos.index",
-        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_ordencabecera/1/detallegestionoportunidades_todos"
+        "rel": "postventa.sugar_gestion.show.ordenCabecera.index",
+        "href": "https://api-sugarcrm.casabaca.loc/api/v2/postventa/sugar_gestion/4/ordenCabecera"
       }
     ]
   }
